@@ -1,0 +1,113 @@
+<html>
+  <head>
+    <meta http-equiv="Content-type" content="text/html; charset-euc-kr" />
+    <title>공지사항</title>
+    <style type="text/css">
+      body {
+        font-family: "맑은 고딕";
+        font-size: 0.9em;
+        color: #666;
+      }
+      a {
+        text-decoration: none;
+        color: #09f;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      caption {
+        display: none; /*안보이게 설정,
+                              화면에 보이지는 않지만 스크린리더리로 읽어짐.*/
+      }
+      table {
+        width: 800px;
+        border-collapse: collapse;
+        border-top: 2px solid #8d8d8d;
+      }
+      th {
+        padding: 10px 8px; /*padding: vertical horizontal;*/
+        background: #f9f9f9;
+        color: #666;
+        border-bottom: 1px solid #8d8d8d;
+      }
+
+      td {
+        padding: 10px 8px; /*padding: vertical horizontal;*/
+        text-align: center;
+        line-height: 1.25em;
+        color: #666;
+        border-bottom: 1px solid #8d8d8d;
+      }
+
+      td.article {
+        /*article 클래스가 적용된 열만 좌측 정렬*/
+        text-align: left;
+      }
+    </style>
+
+    <!--
+        <table width="400" height="300" bgcolor="#ffcc99"
+        border="1" bordercolor="#ffffff" cellpadding="10" cellspacing="0" align="center"
+        background="images/barossa_valley.jpg">       
+  --></head>
+
+  <body>
+    <div class="dataTbl1" margin-left: 2fx; margin-top: 100fx;>
+      <table summary="공지사항 목록입니다.">
+        <!--표의 제목-->
+        <caption>
+          공지사항
+        </caption>
+
+        <colgroup>
+          <!--col태그는 표에서 하나 이상의 td태그에 대해 속성값을 정의-->
+          <!-- 여기서는 각 열의 크기를 지정-->
+          <col width="10%" />
+          <col width="*" />
+          <!--나머지 크기-->
+          <col width="14%" />
+        </colgroup>
+
+        <!--테이블 머리말 부분-->
+        <thead>
+          <th scope="번호">번호</th>
+          <th scope="제목">제목</th>
+          <th scope="등록일">등록일</th>
+        </thead>
+
+        <!--테이블 내용 부분-->
+        <tbody>
+          <tr>
+            <td>3</td>
+            <td class="article"><a href="#none">공지사항 내용</a></td>
+            <td>2021-01-01</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td class="article">
+              <strong><a href="#none">공지사항 내용</a></strong>
+            </td>
+            <td>2021-01-01</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td class="article"><a href="#none">공지사항 내용</a></td>
+            <td>2021-01-01</td>
+          </tr>
+          <tr>
+            <td colspan="3">등록된 뉴스가 없습니다</td>
+          </tr>
+        </tbody>
+
+        <!--테이블 꼬리말-->
+        <tfoot></tfoot>
+      </table>
+    </div>
+    <button>1</button>
+    <button>2</button>
+    <button>3</button>
+    ... <button>10</button>
+    <button class="next">다음</button>
+    <button class="back">이전</button>
+  </body>
+</html>
